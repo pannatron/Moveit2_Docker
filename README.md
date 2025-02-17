@@ -51,14 +51,14 @@ sudo apt-get install docker-compose
 ### 1️⃣ Clone the Repository
 Navigate to your workspace and clone this repository:
 ```sh
-git clone https://github.com/KobchokTime/Articulated-6-Dof-Robot.git -b Software-Team
-cd Articulated-6-Dof-Robot
+git clone https://github.com/pannatron/Moveit2_Docker.git
+cd Moveit2_Docker
 ```
 
 ### 2️⃣ Build the Docker Image
 Build the Docker image using the provided `Dockerfile`:
 ```sh
-sudo docker build -t robot-arm-image .
+sudo docker build -t moveit2-image .
 ```
 
 ### 3️⃣ Run a Container from the Image
@@ -71,8 +71,8 @@ sudo docker run -it --rm \
     --privileged \
     --shm-size=4096m \
     --security-opt seccomp=unconfined \
-    -v ~/Desktop/Articulated-6-Dof-Robot/ros2_ws:/home/ubuntu/robot_ws \
-    robot-arm-image /bin/bash
+    -v ~/Desktop/Moveit2_Docker/ros2_ws:/home/ubuntu/robot_ws \
+    moveit2-image /bin/bash
 ```
 
 ### 4️⃣ Access the Container via Browser
