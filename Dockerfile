@@ -7,9 +7,10 @@ RUN apt-get update && apt-get install -y \
     python3-colcon-common-extensions \
     libboost-system-dev \
     build-essential \
-    libudev-dev \
+    libudev-dev \    
+    freeglut3-dev \
     && rm -rf /var/lib/apt/lists/*
-
+    
 # Install ROS packages required for robotic arm simulation
 RUN apt-get update && apt-get install -y \
     ros-humble-moveit \
