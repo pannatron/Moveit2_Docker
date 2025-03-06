@@ -119,5 +119,5 @@ source .text_art.sh
 source /opt/ros/humble/setup.bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 export LDS_MODEL=LDS-01
-sudo chmod 777 /dev/ttyUSB0
-sudo chmod 777 /dev/ttyACM0
+#sudo chmod 777 /dev/ttyUSB0
+#sudo chmod 777 /dev/ttyACM0
